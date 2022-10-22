@@ -7,3 +7,25 @@
 <li>Node</li>
 <li>Express</li>
 <li>MongoDB</li>
+
+
+#Back-End File Structure
+<pre>
+server
+  |__<node_modules>
+  |   |__express
+  |   |__dotenv
+  |
+  |__public
+  |   |__css
+  |   |__js
+  |   |__img
+  |
+  |__src
+  |   |__models
+  |   |__routes
+  |   |__app.js
+  |   |__server.js
+  |__package-lock.json
+  |__package.json
+</pre>
