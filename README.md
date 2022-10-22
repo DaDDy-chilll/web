@@ -29,3 +29,4 @@ server
   |__package-lock.json
   |__package.json
 </pre>
+-src folder is using MVC pattern
