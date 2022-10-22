@@ -10,7 +10,7 @@ app.use(express.json());
 //middleware
 
 
-app.use('/v1',api);
+app.use('/',api);
 
 
 module.exports=app;

@@ -1,5 +1,5 @@
 # Web Frame
-<h2 style='color:green'>This web frame is base on</h2>
+<h2>This web frame is base on</h2>
 <h3>Forent-End</h3>
 <li>React</li>
 </hr>
