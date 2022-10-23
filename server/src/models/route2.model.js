@@ -1,12 +1,6 @@
-const route2 = require('./route2.mongo');
-const id = 1;
+const route2 = require('./routes.mongo');
+const id = 0;
 
-const person = {
-    no:id,
-    fname:'Daddy',
-    lname:'Chill',
-    email:'paingsettk@gmail.com',
-}
 
 async function lastestId (){
     const ID = await  route2.findOne().sort('-id');
@@ -17,8 +11,8 @@ async function lastestId (){
     }
 }
 
-function saveinfo(data){
-    route2.findOneAndUpdate({no:data.no},person,{upsert:true});
+async function saveinfo(data){
+    await route2.findOneAndUpdate({id:data.id},data,{upsert:true});
 }
 
 async function info (data){
@@ -26,6 +20,7 @@ async function info (data){
    const newinfo = Object.assign(data,{
     id:endId
    });
+//    console.log(newinfo);
    await saveinfo(newinfo);
 }
 

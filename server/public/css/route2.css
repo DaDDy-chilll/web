@@ -1,0 +1,62 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+.database{
+    width: 30%;
+    text-align: center;
+    background-color: rgba(1, 223, 130, 0.274);
+    padding: 2% 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.database .fa-server{
+    font-size: 2rem;
+}
+.database p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+.database form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.database form input{
+    width: 60%;
+    height: 1.5rem;
+    margin: 2% 0;
+
+    outline: 1px solid rgba(1, 223, 131, 0.829);
+    padding: 1%;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1rem;
+}
+.database form button{
+    margin-top: 3%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:rgba(1, 223, 131, 0.829) ;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.database form button:hover{
+    background-color: rgba(1, 223, 130, 0.274);
+    color: black;
+}

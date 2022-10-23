@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 const route2Schema = new mongoose.Schema({
+    id:{
+        type:Number,
+        required:true,
+    },
     fname:{
         type:String,
         required:true,
