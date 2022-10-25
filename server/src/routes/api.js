@@ -11,6 +11,6 @@ api.use('/',homeRouter);
 api.use('/route1',rouet1Router);
 api.use('/route2',route2Router);
 api.use('/route3',route3Router);
-api.use('/login',authRouter);
+api.use('/auth',authRouter);
 
 module.exports = api;

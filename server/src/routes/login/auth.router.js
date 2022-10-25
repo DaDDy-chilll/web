@@ -1,8 +1,8 @@
 const express = require('express');
 const authRouter = express.Router();
 
-authRouter.get('/',(req,res)=>{
-    res.render('index',{head:'Login'});
-});
+const {getAuth} = require('./auth.controller');
+
+authRouter.get('/login',getAuth);
 
 module.exports = authRouter;
