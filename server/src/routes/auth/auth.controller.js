@@ -1,6 +1,6 @@
 const express = require('express');
 const crypto = require('crypto');
-cosnt
+
 
 function getAuthLogin(req,res){
     res.render('auth',{
@@ -17,18 +17,24 @@ function getAuthSignup(req,res){
         action:'signup',
         text:"You have already account. Please login here -->",
         remind:'login'
-    })
+    });
+    userSingup();
 };
 
 
 
 
-function userSingup(req,res){
-
+function userSingup(req,res,next){
+    let salt = crypto.randomBytes(16);
+    console.log(salt);
+}
+function authSuccess(req,res){
+    res.render('success');
 }
 
 
 module.exports= {
     getAuthLogin,
     getAuthSignup,
+    authSuccess,
 }
