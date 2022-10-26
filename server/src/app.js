@@ -8,7 +8,7 @@ const api = require('./routes/api');
 
 //setting
 app.set('view engine','ejs');
-app.set('views',path.join(__dirname,'..','public','views'));
+app.set('views','views');
 //setting
 //middleware
 app.use(express.json());

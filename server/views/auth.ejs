@@ -1,0 +1,11 @@
+<%- include('header'); -%>
+    <section class="authcontainer">
+        <h1><%= action %></h1>
+        <form action="/auth/<%= action %>" method="post">
+            <input type="text" name="uname" id="uname" placeholder="Enter Username" autocomplete="off"/>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password" maxlength="8" autocomplete="off"/>
+            <button type="submit"><%= action %></button>
+        </form>
+        <p><%= text %><a href="/auth/<%= remind %>"><%= remind %></a></p>
+    </section>
+    <%- include('footer'); -%>
